@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.shohiebsense.androidtestcases">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+
+        <activity android:name=".case1_basic.Case1BasicActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".case1_basic.ShowTextActivity"/>
+        <activity android:name=".case2_list.LongListActivity"/>
+        <activity android:name=".case3_intent.ContactsActivity"/>
+        <activity android:name=".case3_intent.DialerActivity"/>
+    </application>
+
+</manifest>
